@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:glory_todo_desktop/Pages/TodosPage.dart';
 
 class Todo {
   int todoId;

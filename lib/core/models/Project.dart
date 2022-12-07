@@ -7,7 +7,7 @@ class Project {
   List<dynamic> columns;
 
   Project(this.projectID, this.projectName,
-      this.columns) {} //Kategori eklerken kullan çünkü id dbden veriliyor
+      this.columns); //Kategori eklerken kullan çünkü id dbden veriliyor
 
   Project.addNew(this.projectID, this.projectName) {
     columns = [];

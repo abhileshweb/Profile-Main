@@ -3,10 +3,7 @@ import 'package:glory_todo_desktop/core/JsonManager/JsonManager.dart';
 import 'package:glory_todo_desktop/core/Lang/Lang.dart';
 import 'package:glory_todo_desktop/core/components/ColumnWidget.dart';
 import 'package:glory_todo_desktop/core/models/Column.dart';
-import 'dart:io';
-import 'package:glory_todo_desktop/core/components/Table.dart';
 import 'package:glory_todo_desktop/core/models/Settings.dart';
-import 'package:glory_todo_desktop/core/models/Todo.dart';
 import 'package:glory_todo_desktop/core/models/Project.dart';
 
 class TodosPage extends StatefulWidget {
@@ -143,8 +140,8 @@ class _TodosPageState extends State<TodosPage> {
                               : Color(0xFFf1f2f6),
                           actions: [
                             Center(
-                              child: FlatButton(
-                                color: Colors.green.shade400,
+                              child: ElevatedButton(
+                                // color: Colors.green.shade400,
                                 onPressed: () {
                                   setState(() {
                                     updateProject(Project.addNew(
@@ -263,8 +260,8 @@ class _TodosPageState extends State<TodosPage> {
                             : Color(0xFF212121),
                         actions: [
                           Center(
-                            child: FlatButton(
-                              color: Colors.green.shade400,
+                            child: ElevatedButton(
+                              // color: Colors.green.shade400,
                               onPressed: () {
                                 setState(() {
                                   addColumn(

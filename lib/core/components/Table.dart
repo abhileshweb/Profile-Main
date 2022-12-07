@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:glory_todo_desktop/Pages/TodosPage.dart';
-import 'package:glory_todo_desktop/core/GloryIcons/GloryIcons.dart';
-import 'package:glory_todo_desktop/core/models/Column.dart';
-import 'package:glory_todo_desktop/core/models/Project.dart';
 import 'package:glory_todo_desktop/core/models/Settings.dart';
 import 'package:glory_todo_desktop/core/JsonManager/JsonManager.dart';
 import 'package:page_transition/page_transition.dart';

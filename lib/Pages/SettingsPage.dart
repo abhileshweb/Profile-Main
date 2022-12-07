@@ -128,8 +128,8 @@ class _SettingsPageState extends State<SettingsPage> {
                                   ? Colors.white60
                                   : Colors.black54),
                         ),
-                        RaisedButton(
-                          color: Colors.transparent,
+                        ElevatedButton(
+                          // color: Colors.transparent,
                           child: Text(
                               settings != null
                                   ? settings[0].language == "Turkish"

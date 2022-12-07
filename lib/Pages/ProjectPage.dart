@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:glory_todo_desktop/Pages/SettingsPage.dart';
 import 'package:glory_todo_desktop/core/components/Table.dart';
 import 'package:glory_todo_desktop/core/models/Column.dart';
-import 'dart:convert';
 import 'package:glory_todo_desktop/core/models/Todo.dart';
 import 'package:glory_todo_desktop/core/models/Project.dart';
 import 'package:glory_todo_desktop/core/models/Settings.dart';
@@ -159,8 +158,8 @@ class _ProjectPageState extends State<ProjectPage> {
                           : geceOnPlan,
                       actions: [
                         Center(
-                          child: FlatButton(
-                            color: Colors.green.shade400,
+                          child: ElevatedButton(
+                            // color: Colors.green.shade400,
                             onPressed: () {
                               setState(() {
                                 print("DİL TESTİİİİİİİİİ =============> " +

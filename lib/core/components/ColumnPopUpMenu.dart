@@ -51,24 +51,27 @@ class _ColumnPopUpMenuState extends State<ColumnPopUpMenu> {
       color: widget.isNight ? Color(0xFF1f2024) : Color(0xFFd7d8de),
       onSelected: showMenuSelection,
       itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
-        const PopupMenuItem<String>(
+         PopupMenuItem<String>(
           value: 'edit',
           child: Center(
               child: IconButton(
             icon: Icon(
               Icons.edit,
               color: Colors.black54,
-            ),
+            ), onPressed: () {  },
           )
               //color: night ? Colors.white54 : Colors.black54,
               ),
         ),
-        const PopupMenuItem<String>(
+         PopupMenuItem<String>(
           value: 'remove',
           child: Center(
             child: IconButton(
               icon: Icon(Icons.delete),
               color: Colors.black54,
+              onPressed: () {
+                
+              },
             ),
           ),
         ),

@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:glory_todo_desktop/Pages/TodosPage.dart';
 import 'package:glory_todo_desktop/core/JsonManager/JsonManager.dart';
 import 'package:glory_todo_desktop/core/Lang/Lang.dart';
 import 'package:glory_todo_desktop/core/components/ColumnPopUpMenu.dart';
 import 'package:glory_todo_desktop/core/components/TodoWidget.dart';
-import 'package:glory_todo_desktop/core/models/Column.dart';
-import 'package:glory_todo_desktop/core/models/Project.dart';
 import 'package:glory_todo_desktop/core/models/Settings.dart';
 import 'package:glory_todo_desktop/core/models/Todo.dart';
 
@@ -95,8 +92,8 @@ class _ColumnWidgetState extends State<ColumnWidget> {
                 widget.isNight ? Color(0xFF212121) : Color(0xFFf1f2f6),
             actions: [
               Center(
-                child: FlatButton(
-                  color: Colors.green.shade400,
+                child: ElevatedButton(
+                  // color: Colors.green.shade400,
                   onPressed: () {
                     setState(() {
                       //updatefunc
@@ -277,8 +274,8 @@ class _ColumnWidgetState extends State<ColumnWidget> {
                                 : Color(0xFFf1f2f6),
                             actions: [
                               Center(
-                                child: FlatButton(
-                                  color: Colors.green.shade400,
+                                child: ElevatedButton(
+                                  // color: Colors.green.shade400,
                                   onPressed: () {
                                     setState(() {
                                       if (todoTextKey.currentState.validate()) {
